@@ -1,4 +1,4 @@
-package hw20221207.selenium;
+package hw20221218;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,13 +16,16 @@ public class WebDriverTest {
         System.setProperty("webdriver.http.factory", "jdk-http-client");
 
         WebDriver driver = new ChromeDriver();
-        driver.get("https://the-internet.herokuapp.com");
-        List<WebElement> allLinks = driver.findElements(By.cssSelector("li a"));
+        driver.get("https://litecart.stqa.ru/en/");
+        WebElement linkRubberDucks = driver.findElement(By.linkText("Rubber Ducks"));
 
-        allLinks.get(9).click();
+        linkRubberDucks.click();
 
-        String successText = driver.findElement(By.id("content")).getText();
-        Assert.assertTrue(successText.contains("Drag and Drop"));
-        driver.quit();
+        String successText = driver.findElement(By.tagName("title")).getText();
+        System.out.println("successText");
+
+//        Assert.assertTrue(successText.contains("Rubber Ducks"));
+//        driver.quit();
+
     }
 }

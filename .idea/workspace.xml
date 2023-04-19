@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9262430f-eb63-4c22-8747-cb9735c86946" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hw20221207/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hw20221207/Credentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hw20221207/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hw20221207/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hw20221207/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hw20221207/WebDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hw20221207/WebElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hw20221207/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hw20221207/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hw20221207/selenium/WebDriverTest.java" afterDir="false" />
+    <list default="true" id="9262430f-eb63-4c22-8747-cb9735c86946" name="Changes" comment=".gitignore">
+      <change afterPath="$PROJECT_DIR$/src/test/java/hw20221218/WebDriverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +39,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "G:/Мой диск (djacidk@gmail.com)/Work/Programming/JAVA/PROJECTS/maxima_Selen/src/main/java/hw20221207"
   }
 }]]></component>
@@ -69,8 +54,29 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="hw20221207" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hw20221218" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.WebDriverTest.webDriverTest (1)">
+    <configuration name="WebDriverTest.webDriverTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="maxima_hw20221207_mapping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hw20221218.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hw20221218" />
+      <option name="MAIN_CLASS_NAME" value="hw20221218.WebDriverTest" />
+      <option name="METHOD_NAME" value="webDriverTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebDriverTest.webDriverTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="maxima_hw20221207_mapping" />
       <extension name="coverage">
@@ -91,6 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WebDriverTest.webDriverTest (1)" />
         <item itemvalue="TestNG.WebDriverTest.webDriverTest" />
       </list>
     </recent_temporary>
@@ -104,6 +111,26 @@
       <option name="presentableId" value="Default" />
       <updated>1681866818291</updated>
     </task>
+    <task id="LOCAL-00001" summary="init push">
+      <created>1681867991228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681867991228</updated>
+    </task>
+    <task id="LOCAL-00002" summary=".gitignore">
+      <created>1681868354717</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681868354717</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init push" />
+    <MESSAGE value=".gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitignore" />
   </component>
 </project>
