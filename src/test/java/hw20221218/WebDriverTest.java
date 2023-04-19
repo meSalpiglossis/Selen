@@ -5,27 +5,47 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.util.List;
 
 public class WebDriverTest {
 
-    @Test
-    public void webDriverTest() {
+    WebDriver driver;
+
+    @BeforeMethod
+    void init() {
         System.setProperty("webdriver.http.factory", "jdk-http-client");
-
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         driver.get("https://litecart.stqa.ru/en/");
-        WebElement linkRubberDucks = driver.findElement(By.linkText("Rubber Ducks"));
+    }
 
-        linkRubberDucks.click();
+    @Test
+    public void mainPageTest() {
+        Assert.assertTrue(driver.getTitle().contains("Online Store"));
+        driver.quit();
+    }
 
-        String successText = driver.findElement(By.tagName("title")).getText();
-        System.out.println("successText");
+    @Test
+    public void linkRubberDucksTest() {
+        WebElement link = driver.findElement(By.linkText("Rubber Ducks"));
 
-//        Assert.assertTrue(successText.contains("Rubber Ducks"));
-//        driver.quit();
+        link.click();
 
+        String titleText = driver.getTitle();
+        System.out.println(titleText);
+        Assert.assertTrue(titleText.contains("Rubber Ducks"));
+        driver.quit();
+    }
+
+    @Test
+    public void linkNewCustomersTest() {
+        WebElement link = driver.findElement(By.linkText("New customers click here"));
+
+        link.click();
+
+        String titleText = driver.getTitle();
+        System.out.println(titleText);
+        Assert.assertTrue(titleText.contains("Create Account"));
+        driver.quit();
     }
 }
