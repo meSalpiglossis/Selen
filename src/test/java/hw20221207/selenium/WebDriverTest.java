@@ -11,7 +11,7 @@ import java.util.List;
 
 public class WebDriverTest {
 
-    @Test
+    @Test(timeOut = 5000)
     public void webDriverTest() {
         System.setProperty("webdriver.http.factory", "jdk-http-client");
 
