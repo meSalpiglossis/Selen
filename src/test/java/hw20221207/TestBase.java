@@ -1,8 +1,8 @@
 package hw20221207;
 
-public class BaseTest {
+public class TestBase {
 
-    public BaseTest() {
+    public TestBase() {
         System.out.println("BaseTest default constructor call");
     }
 }

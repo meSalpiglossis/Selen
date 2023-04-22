@@ -1,6 +1,6 @@
 package hw20221207;
 
-public class LoginTest extends BaseTest{
+public class LoginTest extends TestBase {
 
     public LoginTest() {
         System.out.println("LoginTest default constructor call");
