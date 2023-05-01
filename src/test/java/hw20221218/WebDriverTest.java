@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -19,10 +20,14 @@ public class WebDriverTest {
         driver.get("https://litecart.stqa.ru/en/");
     }
 
+    @AfterMethod
+    void driverQuit() {
+        driver.quit();
+    }
+
     @Test(timeOut = 5000)
     public void mainPageTest() {
         Assert.assertTrue(driver.getTitle().contains("Online Store"));
-        driver.quit();
     }
 
     @Test(dependsOnMethods = "mainPageTest", timeOut = 5000)
@@ -33,7 +38,6 @@ public class WebDriverTest {
 
         String titleText = driver.getTitle();
         Assert.assertTrue(titleText.contains("Rubber Ducks"));
-        driver.quit();
     }
 
     @Test(dependsOnMethods = "mainPageTest", timeOut = 5000)
@@ -44,6 +48,5 @@ public class WebDriverTest {
 
         String titleText = driver.getTitle();
         Assert.assertTrue(titleText.contains("Create Account"));
-        driver.quit();
     }
 }
