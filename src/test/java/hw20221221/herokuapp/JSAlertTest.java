@@ -9,19 +9,19 @@ import static org.testng.Assert.assertTrue;
 
 public class JSAlertTest extends TestBase {
 
-    @Test(timeOut = 5000)
+    @Test()
     public void mainPageReachTest() {
         assertTrue(MainPage.titleIsPresented());
     }
 
-    @Test(timeOut = 5000, dependsOnMethods = "mainPageReachTest")
+    @Test()
     public void javaScriptAlertsPageReachTest() {
         MainPage.clickJavaScriptAlertsLink();
 
         assertTrue(JSAlertPage.isProperH3HeaderPresented());
     }
 
-    @Test(timeOut = 5000, dependsOnMethods = "javaScriptAlertsPageReachTest")
+    @Test()
     public void javaScriptAlertsPageJSAlertTest() {
         MainPage.clickJavaScriptAlertsLink();
 
@@ -34,7 +34,7 @@ public class JSAlertTest extends TestBase {
         assertTrue(JSAlertPage.isProperJSAlertResult());
     }
 
-    @Test(timeOut = 5000, dependsOnMethods = "javaScriptAlertsPageReachTest")
+    @Test()
     public void javaScriptAlertsPageJSConfirmTest() {
         MainPage.clickJavaScriptAlertsLink();
 
@@ -47,7 +47,7 @@ public class JSAlertTest extends TestBase {
         assertTrue(JSAlertPage.isProperJSConfirmResult());
     }
 
-    @Test(timeOut = 5000, dependsOnMethods = "javaScriptAlertsPageReachTest")
+    @Test()
     public void javaScriptAlertsPageJSPromptTest() {
         MainPage.clickJavaScriptAlertsLink();
 

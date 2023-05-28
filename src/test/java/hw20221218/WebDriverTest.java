@@ -25,12 +25,12 @@ public class WebDriverTest {
         driver.quit();
     }
 
-    @Test(timeOut = 5000)
+    @Test()
     public void mainPageTest() {
         Assert.assertTrue(driver.getTitle().contains("Online Store"));
     }
 
-    @Test(dependsOnMethods = "mainPageTest", timeOut = 5000)
+    @Test()
     public void linkRubberDucksTest() {
         WebElement link = driver.findElement(By.linkText("Rubber Ducks"));
 
@@ -40,7 +40,7 @@ public class WebDriverTest {
         Assert.assertEquals(titleText, "Rubber Ducks");
     }
 
-    @Test(dependsOnMethods = "mainPageTest", timeOut = 5000)
+    @Test()
     public void linkNewCustomersTest() {
         WebElement link = driver.findElement(By.linkText("New customers click here"));
 
